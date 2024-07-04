@@ -1,0 +1,414 @@
+// обнуление отступов
+@import
+  'reset';
+
+.button__parametr{
+    width: 134px;
+    height: 48px;
+    background-color: #F9C06A;
+    border-radius: 24px;
+    color: #1E1E1E;
+    font-family: Clicker Script;
+}
+.button__fs{
+    font-size: 18px;
+}
+.main__ff{
+    font-family: Playfair Display;
+}
+.button__hover:hover{
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
+body{
+    background-color: #fff;
+}
+header{
+    background-image:  url(./img/header_img/header__bgi.jpg);
+    height: 768px;
+    box-shadow: inset 0px 0px 80px 40px rgb(0, 0, 0, 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    .menu__logo{
+        font-size: 35px;
+        width: 135px;
+        height: 46px;
+        font-family: Clicker Script;
+        color: aliceblue;
+    }
+    .menu__item{
+        width: 600px;
+        justify-content: space-around;
+        display: flex;
+        color: aliceblue;
+        list-style-type: none;
+    }
+    .menu__li{
+        color: aliceblue;
+    }
+}
+.regist{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+.zagolovok {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 550px;
+    height: 500px;
+    color: aliceblue;
+    font-family: Playfair Display;
+    &__block1{
+        width: 449px;
+        height: 29px;
+        font-size: 16px;
+      
+    }
+    &__block2{
+        width: 449px;
+        height: 291px;
+        font-size: 220px;
+        font-family: Clicker Script;
+      
+    }
+    &__block3{
+      font-size: 16px;
+    }
+    &__button{
+        margin-top: 20px;
+    }
+}
+// info container
+.info {
+    position: relative;
+    background-image: url(./img/header_img/cofe__info__bgi.jpg);
+    background-repeat: no-repeat;
+    background-position: right 10% top;
+    height: 500px;
+    font-family: Playfair Display;
+    .info__container{
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .info__title{
+        color: #603809;
+        font-size: 40px;
+        font-weight:bold;
+    }
+    .info__text{
+        width: 600px;
+        font-size: 20px;
+        color: #707070;
+    }
+    .info__button{
+        margin-top: 20px;
+    }
+    .info__img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}    
+     
+    
+// coffe container
+.coffe{
+    position: relative;
+    &__title{
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: #603809;
+    }
+    &__text{
+        text-align: center;
+        font-size: 20px;
+        color: #707070;
+    }
+    &__grid{
+        position: relative;
+        margin: 0 auto;
+        width: 1350px;
+        height: 600px;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__card{
+        position: relative;
+        border: solid 1px #F9C06A;
+        background-color: #FFF9F1;
+        width: 280px;
+        height: 364px;
+    }
+    &__info{
+        font-family: Playfair Display;
+        text-align: center;
+    }
+    &__name{
+        margin-top: 10px;
+        font-size: 22px;
+        color: #603809;
+        font-weight: bold;
+    }
+    &__structure{
+        margin-top: 10px;
+        font-size: 16px;
+        color: #1E1E1E;
+    }
+    &__price{
+        margin-top: 10px;
+        font-size: 18px;
+        color: #603809;
+        font-weight: bold;
+    }
+    &__button{
+        margin-left: 25%;
+        margin-top: 15px;
+    }
+    &__img2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+// advantages
+.advantages{
+    height: 630px;
+    .advantages__title{
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: #603809;
+    }
+    .advantages__text{
+        text-align: center;
+        font-size: 20px;
+        color: #707070;
+    }
+    &__flex{
+        margin: 40px auto 0 auto;
+        width: 1350px;
+        display: flex;
+        justify-content: space-between;
+        font-family: Playfair Display;
+    }
+    &__card{
+        background-color: #FFF9F1;
+        border: solid 1px #F9C06A;
+        text-align: center;
+        width: 280px;
+        height: 284px;
+    }
+    &__img{
+        padding-top: 40px;
+        margin-bottom: 30px;
+    }
+    &__name{
+        color: #603809;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__text-card{
+        font-size: 20px;
+        color: #707070;
+    }
+    &__card:hover{
+        transition: all 0.5s;
+        background-color: #FFEED8;
+    }
+    &__parametr{
+        margin-top: 40px;
+    }
+    &__button{
+        background-color: #F9C06A;
+        border-radius: 24px;
+        margin-top: 30px;
+        margin-left: 45%;
+    }
+}
+// info2
+.info2{
+    position: relative;
+    width: auto;
+    height: 574px;
+    background-image: url(./img/header_img/info2__bgi.png);
+    background-color: #603809;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__container{
+        width: 600px;
+        height: 304px;
+        font-family: Playfair Display;
+        margin-left: 15%;
+        padding-top: 10%;
+    }
+    &__title{
+        color: #FFF;
+        font-size: 48px;
+    }
+    &__text{
+        padding-top: 20px;
+        font-size: 20px;
+        color: #FFF;
+    }
+    &__button{
+        margin-top: 20px;
+    }
+    &__img-rectangl{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__img{
+        position: absolute;
+        right: 80px;
+        top: 80px;
+    }
+}
+// feedback 
+.feedback{
+    position: relative;
+    height: 790px;
+    &__title{
+        padding-top: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: #603809;
+    }
+    &__text{
+        text-align: center;
+        font-size: 20px;
+        color: #707070;
+    }
+    &__container{
+        position: relative;
+        background-color: #FFF9F1;
+        margin: 50px auto;
+        width: 1000px;
+        height: 525px;
+    }
+    &__card{
+        border: solid #F9C06A;
+        background-color: #FFF9F1;
+        margin: 0 auto;
+        width: 1000px;
+        height: 500px;
+    }
+    &__icon{
+        margin-left: 30px;
+        height: 150px;
+        font-size: 220px;
+        color: #603809;
+    }
+    &__text-card{
+        margin: 0 auto;
+        width: 780px;
+        font-family: Playfair Display;
+        text-align: center;
+        font-size: 24px;
+    }
+    &__client{
+        text-align: center;
+        width: 300px;
+        margin: 6% auto 0 auto;
+    }
+    &__name-client{
+        width: 300px;
+        text-align: center;
+        font-size: 32px;
+        color: #603809;
+        padding-top: 10px;
+    }
+    &__img-client{
+        border-radius: 16px;
+        width: 112px;
+        height: 90px;
+        background-size: cover;
+    }
+    &__rectangl1{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__rectangl2{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.mySwiper{
+    margin-top: 50px;
+}
+// news
+.news{
+    height: 374px;
+    background-image: url(./img/news__img/news__bgi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #603809;
+    background-blend-mode: overlay;
+    font-family: Playfair Display;
+    &__title{
+        padding-top: 50px;
+        font-size: 48px;
+        color: #FFF;
+        text-align: center;
+        font-weight: bold;
+    }
+    &__text{
+        padding-top: 20px;
+        font-size: 20px;
+        color: #FFF;
+        text-align: center;
+        font-weight: bold;
+    }
+    &__button{
+        border-radius: 15px;
+        margin: 50px  auto 0 auto;
+        width: 612px;
+        height: 66px;
+        padding-left: 30px;
+        display: flex;
+        background-color: #FFEED8;
+
+    }
+    &__input{
+        width: 475px;
+        font-size: 20px;
+    }
+    &__input::placeholder{
+        outline: none;
+    }
+    &__subscribe{
+        width: 137px;
+        background-color: #F9C06A;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+// footer
+footer{
+    position: relative;
+}
+.footer{
+    height: 492px;
+    background-image: url(./img/footer__img/fotter_bgi.png);
+    box-shadow: inset 0px 0px 90px 20px rgb(#603809);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #603809;
+    background-blend-mode: overlay;
+}
