@@ -91,6 +91,7 @@ legend {
 .button__parametr {
   width: 134px;
   height: 48px;
+  line-height: 48px;
   background-color: #F9C06A;
   border-radius: 24px;
   color: #1E1E1E;

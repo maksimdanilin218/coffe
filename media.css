@@ -1,13 +1,24 @@
 @media screen and (max-width: 768px) {
+  :root {
+    --media__fs-title: 2rem;
+  }
   header {
     background-position: center;
   }
   .menu .menu__logo {
-    padding-left: 20px;
-    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    font-size: var(--media__fs-title);
   }
   .menu .menu__item {
     display: none;
+  }
+  .regist {
+    width: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .zagolovok {
     width: 280px;
@@ -25,10 +36,14 @@
     text-align: center;
   }
   .zagolovok__block3 {
+    padding: 10px;
     font-weight: bold;
-    width: 330px;
+    width: 300px;
     font-size: 18px;
     color: #fff;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
   .info {
     height: 700px;
@@ -40,6 +55,7 @@
     margin-left: 3%;
   }
   .info .info__title {
+    font-size: var(--media__fs-title);
     text-align: center;
   }
   .info .info__text {
@@ -57,6 +73,7 @@
     height: 2000px;
   }
   .coffe .coffe__title {
+    font-size: var(--media__fs-title);
     margin: 0 auto;
     width: auto;
   }
@@ -80,6 +97,7 @@
     width: auto;
   }
   .advantages .advantages__title {
+    font-size: var(--media__fs-title);
     margin-top: 30px;
   }
   .advantages .advantages__text {
@@ -105,15 +123,20 @@
     margin: 0 auto;
   }
   .info2 .info2__title {
+    margin-top: 40px;
     text-align: center;
-    font-size: 36px;
+    font-size: var(--media__fs-title);
     font-weight: bold;
     width: auto;
   }
   .info2 .info2__text {
-    font-size: 18px;
-    margin: 0 auto;
+    font-size: 20px;
+    margin: 30px auto;
+    padding: 10px;
     width: 300px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 10px;
   }
   .info2 .info2__button {
     margin-top: 10%;
@@ -161,12 +184,15 @@
     font-size: 15px;
   }
   footer .news .news__button {
-    margin-left: 5%;
-    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
     padding-left: 10px;
   }
   footer .news .news__input {
-    padding-left: 10px;
+    width: 200px;
+    font-size: 16px;
+    padding-left: 5px;
   }
   footer .news .news__subscribe {
     padding: 0 5px 0 5px;
@@ -198,5 +224,8 @@
     display: flex;
     width: 200px;
     padding-bottom: 20px;
+  }
+  #slider {
+    width: 300px;
   }
 }

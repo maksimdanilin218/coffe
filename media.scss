@@ -1,16 +1,25 @@
 @media screen and (max-width: 768px){
+    :root{
+        --media__fs-title: 2rem;
+    }
     header{
         background-position: center;
     }
     .menu{
         
         .menu__logo{
-            padding-left: 20px;
-            width: 250px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 150px;
+            font-size: var(--media__fs-title);
         }
         .menu__item{
             display: none;
         }
+    }
+    .regist{
+        width: 200px;
+        justify-content: space-between;
     }
     .zagolovok{
         width: 280px;
@@ -27,10 +36,13 @@
             text-align: center;
         }
         &__block3{
+            padding: 10px;
             font-weight: bold;
-            width: 330px;
+            width: 300px;
             font-size: 18px;
             color: #fff;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
         }
     }
     .info{
@@ -42,6 +54,7 @@
             margin-left: 3%;
         }
         .info__title{
+            font-size: var(--media__fs-title);
             text-align: center;
         }
         .info__text{
@@ -60,6 +73,7 @@
         margin-top: 30px;
         height: 2000px;
         .coffe__title{
+            font-size: var(--media__fs-title);
             margin: 0 auto;
             width: auto;
         }
@@ -82,6 +96,7 @@
         height: 1700px;
         width: auto;
         .advantages__title{
+            font-size: var(--media__fs-title);
             margin-top: 30px;
         }
         .advantages__text{
@@ -108,15 +123,19 @@
             margin: 0 auto;
         }
         .info2__title{
+            margin-top: 40px;
             text-align: center;
-            font-size: 36px;
+            font-size: var(--media__fs-title);
             font-weight: bold;
             width: auto;
         }
         .info2__text{
-            font-size: 18px;
-            margin: 0 auto;
+            font-size: 20px;
+            margin: 30px auto;
+            padding: 10px;
             width: 300px;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
         }
         .info2__button{
             margin-top: 10%;
@@ -160,12 +179,15 @@
                 font-size: 15px;
             }
             .news__button{
-                margin-left: 5%;
-                width: 330px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px;
                 padding-left: 10px;
             }
             .news__input{
-                padding-left: 10px;
+                width: 200px;
+                font-size: 16px;
+                padding-left: 5px;
             }
             .news__subscribe{
                 padding: 0 5px 0 5px;
@@ -197,5 +219,8 @@
                 padding-bottom: 20px;
             }
         }
+    }
+    #slider{
+        width: 300px;
     }
 }
