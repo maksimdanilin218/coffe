@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
   :root {
     --media__fs-title: 2rem;
+    --index: calc(1vh + 1vh) ;
   }
   header {
     background-position: center;

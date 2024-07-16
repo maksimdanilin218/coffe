@@ -1,8 +1,11 @@
 // обнуление отступов
-@import
-  'reset';
+@import 'reset';
 
-.button__parametr{
+:root {
+    --index: calc(1vh + 1vw)
+}
+
+.button__parametr {
     width: 134px;
     height: 48px;
     background-color: #F9C06A;
@@ -10,131 +13,158 @@
     color: #1E1E1E;
     font-family: Clicker Script;
 }
-.button__fs{
+
+.button__fs {
     font-size: 18px;
 }
-.main__ff{
+
+.main__ff {
     font-family: Playfair Display;
 }
-.button__hover:hover{
+
+.button__hover:hover {
     transition: all 0.5s;
     transform: scale(1.2);
 }
-body{
+
+body {
     background-color: #fff;
 }
-header{
-    background-image:  url(./img/header_img/header__bgi.jpg);
+
+header {
+    background-image: url(./img/header_img/header__bgi.jpg);
     height: 768px;
     box-shadow: inset 0px 0px 80px 40px rgb(0, 0, 0, 2);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.menu{
+
+.menu {
     align-items: center;
     display: flex;
     justify-content: space-around;
     height: 90px;
-    .menu__logo{
+
+    .menu__logo {
         font-size: 35px;
         width: 135px;
         height: 46px;
         font-family: Clicker Script;
         color: aliceblue;
     }
-    .menu__item{
+
+    .menu__item {
         width: 600px;
         justify-content: space-around;
         display: flex;
         color: aliceblue;
         list-style-type: none;
     }
-    .menu__li{
+
+    .menu__li {
         color: aliceblue;
     }
 }
-.regist{
+
+.regist {
     width: 300px;
     display: flex;
     justify-content: space-around;
     color: aliceblue;
 }
+
 .zagolovok {
     position: relative;
     top: 10%;
-    left: 10%;
+    left: 0;
     width: 550px;
     height: 500px;
     color: aliceblue;
     font-family: Playfair Display;
-    &__block1{
+
+    &__block1 {
         width: 449px;
         height: 29px;
         font-size: 16px;
-      
+
     }
-    &__block2{
+
+    &__block2 {
         width: 449px;
         height: 291px;
-        font-size: 220px;
+        font-size: calc(var(--index) * 10);
         font-family: Clicker Script;
-      
+
     }
-    &__block3{
-      font-size: 16px;
+
+    &__block3 {
+        font-size: 16px;
     }
-    &__button{
+
+    &__button {
         margin-top: 20px;
     }
 }
+
 // info container
 .info {
+    opacity: 1;
+    transition: all 1s;
     position: relative;
     background-image: url(./img/header_img/cofe__info__bgi.jpg);
     background-repeat: no-repeat;
     background-position: right 10% top;
     height: 500px;
     font-family: Playfair Display;
-    .info__container{
+
+    .info__container {
         margin-left: 10%;
         margin-top: 10%;
     }
-    .info__title{
+
+    .info__title {
         color: #603809;
         font-size: 40px;
-        font-weight:bold;
+        font-weight: bold;
     }
-    .info__text{
+
+    .info__text {
         width: 600px;
         font-size: 20px;
         color: #707070;
     }
-    .info__button{
+
+    .info__button {
         margin-top: 20px;
     }
-    .info__img{
+
+    .info__img {
         position: absolute;
         bottom: 0;
         left: 0;
     }
-}    
-     
-    
+}
+
+
 // coffe container
-.coffe{
+.coffe {
+    transition: all 1s;
     position: relative;
-    &__title{
+
+    &__title {
         text-align: center;
         font-weight: bold;
         font-size: 40px;
         color: #603809;
     }
-    &__text{
+
+    &__text {
         text-align: center;
         font-size: 20px;
         color: #707070;
     }
-    &__grid{
+
+    &__grid {
         position: relative;
         margin: 0 auto;
         width: 1350px;
@@ -143,101 +173,122 @@ header{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    &__card{
+
+    &__card {
         position: relative;
         border: solid 1px #F9C06A;
         background-color: #FFF9F1;
         width: 280px;
         height: 364px;
     }
-    &__info{
+
+    &__info {
         font-family: Playfair Display;
         text-align: center;
     }
-    &__name{
+
+    &__name {
         margin-top: 10px;
         font-size: 22px;
         color: #603809;
         font-weight: bold;
     }
-    &__structure{
+
+    &__structure {
         margin-top: 10px;
         font-size: 16px;
         color: #1E1E1E;
     }
-    &__price{
+
+    &__price {
         margin-top: 10px;
         font-size: 18px;
         color: #603809;
         font-weight: bold;
     }
-    &__button{
+
+    &__button {
         margin-left: 25%;
         margin-top: 15px;
     }
-    &__img2{
+
+    &__img2 {
         position: absolute;
         bottom: 0;
         right: 0;
     }
 }
+
 // advantages
-.advantages{
+.advantages {
     height: 630px;
-    .advantages__title{
+    transition: all 1s;
+
+    .advantages__title {
         text-align: center;
         font-weight: bold;
         font-size: 40px;
         color: #603809;
     }
-    .advantages__text{
+
+    .advantages__text {
         text-align: center;
         font-size: 20px;
         color: #707070;
     }
-    &__flex{
+
+    &__flex {
         margin: 40px auto 0 auto;
         width: 1350px;
         display: flex;
         justify-content: space-between;
         font-family: Playfair Display;
     }
-    &__card{
+
+    &__card {
         background-color: #FFF9F1;
         border: solid 1px #F9C06A;
         text-align: center;
         width: 280px;
         height: 284px;
     }
-    &__img{
+
+    &__img {
         padding-top: 40px;
         margin-bottom: 30px;
     }
-    &__name{
+
+    &__name {
         color: #603809;
         font-size: 24px;
         font-weight: bold;
     }
-    &__text-card{
+
+    &__text-card {
         font-size: 20px;
         color: #707070;
     }
-    &__card:hover{
+
+    &__card:hover {
         transition: all 0.5s;
         background-color: #FFEED8;
     }
-    &__parametr{
+
+    &__parametr {
         margin-top: 40px;
     }
-    &__button{
+
+    &__button {
         background-color: #F9C06A;
         border-radius: 24px;
         margin-top: 30px;
         margin-left: 45%;
     }
 }
+
 // info2
-.info2{
+.info2 {
+    transition: all 1s;
     position: relative;
     width: auto;
     height: 574px;
@@ -247,113 +298,134 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    &__container{
+
+    &__container {
         width: 600px;
         height: 304px;
         font-family: Playfair Display;
         margin-left: 15%;
         padding-top: 10%;
     }
-    &__title{
+
+    &__title {
         color: #FFF;
         font-size: 48px;
     }
-    &__text{
+
+    &__text {
         padding-top: 20px;
         font-size: 20px;
         color: #FFF;
     }
-    &__button{
+
+    &__button {
         margin-top: 20px;
     }
-    &__img-rectangl{
+
+    &__img-rectangl {
         position: absolute;
         right: 0;
         top: 0;
     }
-    &__img{
+
+    &__img {
         position: absolute;
         right: 80px;
         top: 80px;
     }
 }
+
 // feedback 
-.feedback{
+.feedback {
+    transition: all 1s;
     position: relative;
     height: 790px;
-    &__title{
+
+    &__title {
         padding-top: 50px;
         text-align: center;
         font-weight: bold;
         font-size: 40px;
         color: #603809;
     }
-    &__text{
+
+    &__text {
         text-align: center;
         font-size: 20px;
         color: #707070;
     }
-    &__container{
+
+    &__container {
         position: relative;
         background-color: #FFF9F1;
         margin: 50px auto;
         width: 1000px;
         height: 525px;
     }
-    &__card{
+
+    &__card {
         border: solid #F9C06A;
         background-color: #FFF9F1;
         margin: 0 auto;
         width: 1000px;
         height: 500px;
     }
-    &__icon{
+
+    &__icon {
         margin-left: 30px;
         height: 150px;
         font-size: 220px;
         color: #603809;
     }
-    &__text-card{
+
+    &__text-card {
         margin: 0 auto;
         width: 780px;
         font-family: Playfair Display;
         text-align: center;
         font-size: 24px;
     }
-    &__client{
+
+    &__client {
         text-align: center;
         width: 300px;
         margin: 6% auto 0 auto;
     }
-    &__name-client{
+
+    &__name-client {
         width: 300px;
         text-align: center;
         font-size: 32px;
         color: #603809;
         padding-top: 10px;
     }
-    &__img-client{
+
+    &__img-client {
         border-radius: 16px;
         width: 112px;
         height: 90px;
         background-size: cover;
     }
-    &__rectangl1{
+
+    &__rectangl1 {
         position: absolute;
         bottom: 0;
         left: 0;
     }
-    &__rectangl2{
+
+    &__rectangl2 {
         position: absolute;
         right: 0;
         top: 0;
     }
 }
-.mySwiper{
+
+.mySwiper {
     margin-top: 50px;
 }
+
 // news
-.news{
+.news {
     height: 374px;
     background-image: url(./img/news__img/news__bgi.png);
     background-repeat: no-repeat;
@@ -361,23 +433,26 @@ header{
     background-color: #603809;
     background-blend-mode: overlay;
     font-family: Playfair Display;
-    &__title{
+
+    &__title {
         padding-top: 50px;
         font-size: 48px;
         color: #FFF;
         text-align: center;
         font-weight: bold;
     }
-    &__text{
+
+    &__text {
         padding-top: 20px;
         font-size: 20px;
         color: #FFF;
         text-align: center;
         font-weight: bold;
     }
-    &__button{
+
+    &__button {
         border-radius: 15px;
-        margin: 50px  auto 0 auto;
+        margin: 50px auto 0 auto;
         width: 612px;
         height: 66px;
         padding-left: 30px;
@@ -385,30 +460,105 @@ header{
         background-color: #FFEED8;
 
     }
-    &__input{
+
+    &__input {
         width: 475px;
         font-size: 20px;
     }
-    &__input::placeholder{
+
+    &__input::placeholder {
         outline: none;
     }
-    &__subscribe{
+
+    &__subscribe {
         width: 137px;
         background-color: #F9C06A;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
 }
+
 // footer
-footer{
+footer {
     position: relative;
 }
-.footer{
+
+.footer {
     height: 492px;
     background-image: url(./img/footer__img/fotter_bgi.png);
-    box-shadow: inset 0px 0px 90px 20px rgb(#603809);
+    // box-shadow: inset 0px 0px 90px 20px rgb(#603809);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #603809;
     background-blend-mode: overlay;
+
+    &__container {
+        padding-top: 200px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__block1 {
+        display: block;
+
+        &__logo {
+            font-size: 40px;
+            width: 135px;
+            height: 46px;
+            font-family: Clicker Script;
+            color: aliceblue;
+        }
+    }
+
+    &__block2 {
+
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        color: #FFF;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-family: Playfair Display;
+        color: #FFF;
+        padding-bottom: 10px;
+        font-size: 18px;
+        list-style: none;
+    }
+
+    &__rectangle1 {
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+
+    &__rectangle2 {
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+
+}
+
+.media {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    &__svg {
+        width: 30px;
+        height: 30px;
+        fill: #FFF;
+    }
+
+    &__svg:hover {
+        transition: all 0.5s;
+        transform: scale(1.1);
+    }
 }

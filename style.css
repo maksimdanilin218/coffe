@@ -88,10 +88,13 @@ legend {
   display: block;
 }
 
+:root {
+  --index: calc(1vh + 1vw) ;
+}
+
 .button__parametr {
   width: 134px;
   height: 48px;
-  line-height: 48px;
   background-color: #F9C06A;
   border-radius: 24px;
   color: #1E1E1E;
@@ -167,10 +170,11 @@ header {
       justify-content: space-around;
   color: aliceblue;
 }
+
 .zagolovok {
   position: relative;
   top: 10%;
-  left: 10%;
+  left: 0;
   width: 550px;
   height: 500px;
   color: aliceblue;
@@ -184,7 +188,7 @@ header {
 .zagolovok__block2 {
   width: 449px;
   height: 291px;
-  font-size: 220px;
+  font-size: calc(var(--index) * 10);
   font-family: Clicker Script;
 }
 .zagolovok__block3 {
@@ -195,6 +199,9 @@ header {
 }
 
 .info {
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   position: relative;
   background-image: url(./img/header_img/cofe__info__bgi.jpg);
   background-repeat: no-repeat;
@@ -226,6 +233,8 @@ header {
 }
 
 .coffe {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   position: relative;
 }
 .coffe__title {
@@ -289,6 +298,8 @@ header {
 
 .advantages {
   height: 630px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .advantages .advantages__title {
   text-align: center;
@@ -348,6 +359,8 @@ header {
 }
 
 .info2 {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   position: relative;
   width: auto;
   height: 574px;
@@ -389,6 +402,8 @@ header {
 }
 
 .feedback {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   position: relative;
   height: 790px;
 }
@@ -523,15 +538,14 @@ header {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-/* footer */
-footer{
+
+footer {
   position: relative;
 }
+
 .footer {
   height: 492px;
   background-image: url(./img/footer__img/fotter_bgi.png);
-  -webkit-box-shadow: inset 0px 0px 90px 20px rgb(0, 0, 0);
-          box-shadow: inset 0px 0px 90px 20px rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #603809;
@@ -541,8 +555,11 @@ footer{
   padding-top: 200px;
 }
 .footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .footer__block1 {
   display: block;
@@ -553,23 +570,6 @@ footer{
   height: 46px;
   font-family: Clicker Script;
   color: aliceblue;
-}
-.media {
-  padding-top: 60px;
-  display: flex;
-  justify-content: space-between;
-}
-.media__svg {
-  width: 30px;
-  height: 30px;
-  fill: #FFF;
-}
-.media__svg:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-
-.footer__block2 {
 }
 .footer__title {
   margin-bottom: 30px;
@@ -595,3 +595,23 @@ footer{
   right: 0;
 }
 
+.media {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.media__svg {
+  width: 30px;
+  height: 30px;
+  fill: #FFF;
+}
+.media__svg:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
